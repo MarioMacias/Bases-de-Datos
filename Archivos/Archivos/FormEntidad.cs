@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Archivos
 {
@@ -34,7 +35,7 @@ namespace Archivos
         {
             if (fa.crearArchivo())
             {
-                lbl_Cabecera.Text = fa.asignarCabecera(cab);  // forma visual de mostrar la cabezera.
+                fa.asignarCabecera(cab);  // forma visual de mostrar la cabezera.
 
                 //Mostrar los botones.
                 botonVisible(true);
@@ -81,7 +82,7 @@ namespace Archivos
             foreach(Entidad en in entidades){
                 //string identid = BitConverter.ToString(en.Id_Entidad);
                 //dgv_Entidad.Rows.Add(identid, en.string_Nombre, en.direccion_Entidad, en.direccion_Atributo, en.direccion_Dato, en.direccion_Siguiente);
-                dgv_Entidad.Rows.Add(en.string_Nombre, en.direccion_Entidad, en.direccion_Atributo, en.direccion_Dato, en.direccion_Siguiente);
+                dgv_Entidad.Rows.Add(en.string_Nombre);
             }
         }
 
@@ -196,6 +197,8 @@ namespace Archivos
                 lbl_Cabecera.Text = c;
                 datosDataG();
                 botonVisible(true);
+                lbBasedeDatos.Visible = true;
+                lbBasedeDatos.Text = "BASE DE DATOS: "+  fa.regresaNombreBD();
             }
             else
             {
@@ -551,6 +554,11 @@ namespace Archivos
             FormSQL sql = new FormSQL(this, fa.fileS, fa.nombreDelArchivo, entidades);
             //sql.cambia += new FormAtributo.pasar(regresa);
             sql.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

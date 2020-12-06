@@ -56,3 +56,23 @@ C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\
 C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.exe
 C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.pdb
 C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormSQL.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormArbolPrimario.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.BusquedaIndice.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.ConsultaAtributo.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.ConsultaEntidad.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.ConsultaRegistros.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormAtributo.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormEntidad.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormIndiceHash.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormIndicePrimario.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormIndiceSecundario.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormRegistro.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.FormSQL.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.Properties.Resources.resources
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.pdb

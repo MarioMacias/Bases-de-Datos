@@ -27,16 +27,22 @@ namespace Archivos
 
         List<Entidad> entidades;
 
+        private string rutaCarpeta;
+        private FolderBrowserDialog carpeta;
+        private string NombreBasedatos;
+
         /*Forma de crear un nuevo arhcivo*/
         public bool crearArchivo()
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string nom = saveFileDialog.FileName;
-                nombreArchivo = nom + ".dd";
+        { 
 
-                Fichero = new FileStream(nombreArchivo, FileMode.Create);
+            SaveFileDialog save = new SaveFileDialog();
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                rutaCarpeta = save.FileName;
+                Directory.CreateDirectory(rutaCarpeta);
+               
+                Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.Create);
+
                 Fichero.Close();
                 return true;
             }
@@ -45,12 +51,14 @@ namespace Archivos
                 MessageBox.Show("El archivo no se pudo crear...");
                 return false;
             }
+        
         }
 
         /*Asignamos la cabezera en -1 por se la primera*/
         public string asignarCabecera(long cab)
         {
-            Fichero = File.Open(nombreArchivo, FileMode.Open, FileAccess.Write);
+            FileStream Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.OpenOrCreate, FileAccess.Write);
+            //Fichero = File.Open(nombreArchivo, FileMode.Open, FileAccess.Write);
             binaryWriter = new BinaryWriter(Fichero);
             binaryWriter.Write(cab);
             
@@ -63,8 +71,10 @@ namespace Archivos
         public List<Entidad> asigrarDatos(List<Entidad> entidades)
         {
             this.entidades = entidades;
-            Fichero = File.Open(nombreArchivo, FileMode.Open);
-             entidades.Last().direccion_Entidad = Fichero.Length; // le asigno el tamaño en bytes a la ultima entidad
+           
+            Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.OpenOrCreate, FileAccess.Write);
+            //MessageBox.Show(Fichero.Name);
+            entidades.Last().direccion_Entidad = Fichero.Length; // le asigno el tamaño en bytes a la ultima entidad
             Fichero.Close();
 
             if (escribirArchivo())//escribimos el archivo para los nuevos datos
@@ -115,7 +125,8 @@ namespace Archivos
         /*Escribimos en el nuevo archivo los valores correspondientes*/
         public bool escribirArchivo()
         {
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+        
+            Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.Open, FileAccess.Write);
             Fichero.Position = Fichero.Length;
             binaryWriter = new BinaryWriter(Fichero);
 
@@ -150,7 +161,7 @@ namespace Archivos
         /*Se escribe una nueva cabecera*/
         public string nuevaCabecera(List<Entidad> entiCab)
         {
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+            Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.OpenOrCreate, FileAccess.Write);
             Fichero.Seek(0, SeekOrigin.Begin);
             binaryWriter = new BinaryWriter(Fichero);
             binaryWriter.Write(entiCab.First().direccion_Entidad);
@@ -163,7 +174,7 @@ namespace Archivos
         /*Metodo para escribir sobre el archivo original*/
         public void nuevosDatosArchivo(Entidad entidad)
         {
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+            Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.OpenOrCreate, FileAccess.Write);
             Fichero.Seek(entidad.direccion_Entidad, SeekOrigin.Begin); //Posicionar en la direccion de la entidad para sobresciribir.
 
             binaryWriter = new BinaryWriter(Fichero);
@@ -263,26 +274,39 @@ namespace Archivos
             }
         }
 
+        
         /*Metodo para abrir un archivo*/
         public string abrirArchivo(List<Entidad> entidades)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            if (folder.ShowDialog() == DialogResult.OK)
             {
                 this.entidades = entidades;
-                nombreArchivo = openFileDialog.FileName;
-                Fichero = File.Open(nombreArchivo, FileMode.Open, FileAccess.ReadWrite);
+                rutaCarpeta = folder.SelectedPath;
+              
+                Fichero = File.Open(rutaCarpeta + @"\tablas.bin", FileMode.Open, FileAccess.ReadWrite);
                 Fichero.Close();
+                NombreBasedatos = Path.GetFileName(Path.GetDirectoryName(Fichero.Name));
+ 
             }
+            //MessageBox.Show(Convert.ToString(Fichero.Name));
             return LeerCabecera();
+        }
+
+        public string regresaNombreBD()
+        {
+            return NombreBasedatos;
         }
 
         /*Empezamos a leer el archivo*/
         private string LeerCabecera()
         {
+
             try
             {
-                Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Read);
+
+                Fichero = new FileStream(rutaCarpeta + @"\tablas.bin", FileMode.Open, FileAccess.Read);
                 binaryReader = new BinaryReader(Fichero);
                 binaryReader.BaseStream.Seek(0, SeekOrigin.Begin);
                 cab = binaryReader.ReadInt64();
@@ -300,20 +324,20 @@ namespace Archivos
                     return "-1";
                 }
             }
-            catch (Exception e)
+            catch(Exception e)
             {
                 MessageBox.Show(e.Message);
                 MessageBox.Show("Es aqui el error");
                 return "";
             }
+           
         }
 
         /*Lee los archivos y crea las entidades y atributos con sus respectivos datos*/
         private bool asignarMemoria()
         {
             long dat = 0;
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Read);
-            binaryReader = new BinaryReader(Fichero);
+            Fichero = new FileStream(rutaCarpeta+@"\tablas.bin", FileMode.Open, FileAccess.Read); binaryReader = new BinaryReader(Fichero);
             binaryReader.BaseStream.Seek(cab, SeekOrigin.Begin);//cabecera 
 
             while (leeArchivo)

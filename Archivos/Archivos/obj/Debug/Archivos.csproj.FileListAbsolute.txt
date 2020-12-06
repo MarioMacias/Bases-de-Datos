@@ -1,0 +1,58 @@
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.FormArbolPrimario.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.FormAtributo.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.FormEntidad.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.FormIndicePrimario.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.FormIndiceSecundario.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.FormRegistro.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.Properties.Resources.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.ConsultaAtributo.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Archivos-master\Archivos\Archivos\obj\Debug\Archivos.ConsultaEntidad.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormArbolPrimario.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.ConsultaAtributo.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.ConsultaEntidad.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormAtributo.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormEntidad.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormIndicePrimario.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormIndiceSecundario.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormRegistro.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.Properties.Resources.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormIndiceHash.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.ConsultaRegistros.resources
+C:\Users\Mario\OneDrive\Documentos\Semestre 8\Archivos\Proyecto\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.BusquedaIndice.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormArbolPrimario.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.BusquedaIndice.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.ConsultaAtributo.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.ConsultaEntidad.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.ConsultaRegistros.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormAtributo.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormEntidad.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormIndiceHash.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormIndicePrimario.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormIndiceSecundario.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormRegistro.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.Properties.Resources.resources
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Mario\Google Drive\Semestre 9\Proyecto Git\Archivos\Archivos\obj\Debug\Archivos.FormSQL.resources

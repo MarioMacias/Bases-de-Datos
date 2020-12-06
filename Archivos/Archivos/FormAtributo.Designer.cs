@@ -45,13 +45,6 @@
             this.modificarTipoDeIndiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_eliminarAtributo = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_Atributo = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_Dato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.long_Atributo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dir_Atributo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_Indice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dir_Indice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dir_sigAtributo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_Nombre = new System.Windows.Forms.Label();
             this.lb_Tipo = new System.Windows.Forms.Label();
             this.lb_Longitud = new System.Windows.Forms.Label();
@@ -66,6 +59,13 @@
             this.btn_aceptarEntidad = new System.Windows.Forms.Button();
             this.lb_Foranea = new System.Windows.Forms.Label();
             this.cb_Foranea = new System.Windows.Forms.ComboBox();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_Dato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.long_Atributo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dir_Atributo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_Indice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dir_Indice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dir_sigAtributo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Atributo)).BeginInit();
             this.SuspendLayout();
@@ -73,13 +73,14 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.DimGray;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_CrearAtributo,
             this.btn_modifAtributo,
             this.btn_eliminarAtributo});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(866, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1155, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,7 +88,7 @@
             // 
             this.btn_CrearAtributo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_CrearAtributo.Name = "btn_CrearAtributo";
-            this.btn_CrearAtributo.Size = new System.Drawing.Size(94, 20);
+            this.btn_CrearAtributo.Size = new System.Drawing.Size(117, 24);
             this.btn_CrearAtributo.Text = "Crear Atributo";
             this.btn_CrearAtributo.Click += new System.EventHandler(this.btn_CrearAtributo_Click);
             // 
@@ -101,42 +102,42 @@
             this.modificarTipoDeIndiceToolStripMenuItem});
             this.btn_modifAtributo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_modifAtributo.Name = "btn_modifAtributo";
-            this.btn_modifAtributo.Size = new System.Drawing.Size(129, 20);
+            this.btn_modifAtributo.Size = new System.Drawing.Size(162, 24);
             this.btn_modifAtributo.Text = "Modificar el Atributo";
             this.btn_modifAtributo.Click += new System.EventHandler(this.btn_modifAtributo_Click);
             // 
             // modificarTodoToolStripMenuItem
             // 
             this.modificarTodoToolStripMenuItem.Name = "modificarTodoToolStripMenuItem";
-            this.modificarTodoToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.modificarTodoToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.modificarTodoToolStripMenuItem.Text = "Modificar todo";
             this.modificarTodoToolStripMenuItem.Click += new System.EventHandler(this.modificarTodoToolStripMenuItem_Click);
             // 
             // modificarNombreToolStripMenuItem
             // 
             this.modificarNombreToolStripMenuItem.Name = "modificarNombreToolStripMenuItem";
-            this.modificarNombreToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.modificarNombreToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.modificarNombreToolStripMenuItem.Text = "Modificar nombre";
             this.modificarNombreToolStripMenuItem.Click += new System.EventHandler(this.modificarNombreToolStripMenuItem_Click);
             // 
             // modificarTipoDeDatoToolStripMenuItem
             // 
             this.modificarTipoDeDatoToolStripMenuItem.Name = "modificarTipoDeDatoToolStripMenuItem";
-            this.modificarTipoDeDatoToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.modificarTipoDeDatoToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.modificarTipoDeDatoToolStripMenuItem.Text = "Modificar tipo de dato";
             this.modificarTipoDeDatoToolStripMenuItem.Click += new System.EventHandler(this.modificarTipoDeDatoToolStripMenuItem_Click);
             // 
             // modificarLongitudToolStripMenuItem
             // 
             this.modificarLongitudToolStripMenuItem.Name = "modificarLongitudToolStripMenuItem";
-            this.modificarLongitudToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.modificarLongitudToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.modificarLongitudToolStripMenuItem.Text = "Modificar longitud";
             this.modificarLongitudToolStripMenuItem.Click += new System.EventHandler(this.modificarLongitudToolStripMenuItem_Click);
             // 
             // modificarTipoDeIndiceToolStripMenuItem
             // 
             this.modificarTipoDeIndiceToolStripMenuItem.Name = "modificarTipoDeIndiceToolStripMenuItem";
-            this.modificarTipoDeIndiceToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.modificarTipoDeIndiceToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.modificarTipoDeIndiceToolStripMenuItem.Text = "Modificar tipo de indice";
             this.modificarTipoDeIndiceToolStripMenuItem.Click += new System.EventHandler(this.modificarTipoDeIndiceToolStripMenuItem_Click);
             // 
@@ -144,7 +145,7 @@
             // 
             this.btn_eliminarAtributo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_eliminarAtributo.Name = "btn_eliminarAtributo";
-            this.btn_eliminarAtributo.Size = new System.Drawing.Size(121, 20);
+            this.btn_eliminarAtributo.Size = new System.Drawing.Size(152, 24);
             this.btn_eliminarAtributo.Text = "Eliminar el Atributo";
             this.btn_eliminarAtributo.Click += new System.EventHandler(this.btn_eliminarAtributo_Click);
             // 
@@ -169,80 +170,23 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Atributo.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgv_Atributo.Location = new System.Drawing.Point(12, 40);
+            this.dgv_Atributo.Location = new System.Drawing.Point(16, 49);
+            this.dgv_Atributo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_Atributo.Name = "dgv_Atributo";
             this.dgv_Atributo.ReadOnly = true;
-            this.dgv_Atributo.Size = new System.Drawing.Size(842, 330);
+            this.dgv_Atributo.RowHeadersWidth = 51;
+            this.dgv_Atributo.Size = new System.Drawing.Size(1123, 406);
             this.dgv_Atributo.TabIndex = 3;
-            // 
-            // Nombre
-            // 
-            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Nombre.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // tipo_Dato
-            // 
-            this.tipo_Dato.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.tipo_Dato.DefaultCellStyle = dataGridViewCellStyle2;
-            this.tipo_Dato.HeaderText = "Tipo Dato";
-            this.tipo_Dato.Name = "tipo_Dato";
-            this.tipo_Dato.ReadOnly = true;
-            // 
-            // long_Atributo
-            // 
-            this.long_Atributo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.long_Atributo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.long_Atributo.HeaderText = "Longitud";
-            this.long_Atributo.Name = "long_Atributo";
-            this.long_Atributo.ReadOnly = true;
-            // 
-            // Dir_Atributo
-            // 
-            this.Dir_Atributo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Dir_Atributo.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Dir_Atributo.HeaderText = "Dir. Atributo";
-            this.Dir_Atributo.Name = "Dir_Atributo";
-            this.Dir_Atributo.ReadOnly = true;
-            // 
-            // tipo_Indice
-            // 
-            this.tipo_Indice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.tipo_Indice.DefaultCellStyle = dataGridViewCellStyle5;
-            this.tipo_Indice.HeaderText = "Tipo de Indice";
-            this.tipo_Indice.Name = "tipo_Indice";
-            this.tipo_Indice.ReadOnly = true;
-            // 
-            // Dir_Indice
-            // 
-            this.Dir_Indice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Dir_Indice.HeaderText = "Dir. Indice";
-            this.Dir_Indice.Name = "Dir_Indice";
-            this.Dir_Indice.ReadOnly = true;
-            // 
-            // Dir_sigAtributo
-            // 
-            this.Dir_sigAtributo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Dir_sigAtributo.HeaderText = "Dir. Siguiente Atributo";
-            this.Dir_sigAtributo.Name = "Dir_sigAtributo";
-            this.Dir_sigAtributo.ReadOnly = true;
             // 
             // lb_Nombre
             // 
             this.lb_Nombre.AutoSize = true;
             this.lb_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Nombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_Nombre.Location = new System.Drawing.Point(12, 389);
+            this.lb_Nombre.Location = new System.Drawing.Point(16, 479);
+            this.lb_Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Nombre.Name = "lb_Nombre";
-            this.lb_Nombre.Size = new System.Drawing.Size(77, 16);
+            this.lb_Nombre.Size = new System.Drawing.Size(95, 20);
             this.lb_Nombre.TabIndex = 9;
             this.lb_Nombre.Text = "NOMBRE:";
             this.lb_Nombre.Visible = false;
@@ -252,9 +196,10 @@
             this.lb_Tipo.AutoSize = true;
             this.lb_Tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Tipo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_Tipo.Location = new System.Drawing.Point(158, 389);
+            this.lb_Tipo.Location = new System.Drawing.Point(211, 479);
+            this.lb_Tipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Tipo.Name = "lb_Tipo";
-            this.lb_Tipo.Size = new System.Drawing.Size(118, 16);
+            this.lb_Tipo.Size = new System.Drawing.Size(146, 20);
             this.lb_Tipo.TabIndex = 10;
             this.lb_Tipo.Text = "TIPO DE DATO:";
             this.lb_Tipo.Visible = false;
@@ -264,9 +209,10 @@
             this.lb_Longitud.AutoSize = true;
             this.lb_Longitud.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Longitud.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_Longitud.Location = new System.Drawing.Point(282, 389);
+            this.lb_Longitud.Location = new System.Drawing.Point(376, 479);
+            this.lb_Longitud.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Longitud.Name = "lb_Longitud";
-            this.lb_Longitud.Size = new System.Drawing.Size(89, 16);
+            this.lb_Longitud.Size = new System.Drawing.Size(110, 20);
             this.lb_Longitud.TabIndex = 11;
             this.lb_Longitud.Text = "LONGITUD:";
             this.lb_Longitud.Visible = false;
@@ -276,18 +222,20 @@
             this.lb_indice.AutoSize = true;
             this.lb_indice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_indice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_indice.Location = new System.Drawing.Point(377, 389);
+            this.lb_indice.Location = new System.Drawing.Point(503, 479);
+            this.lb_indice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_indice.Name = "lb_indice";
-            this.lb_indice.Size = new System.Drawing.Size(126, 16);
+            this.lb_indice.Size = new System.Drawing.Size(157, 20);
             this.lb_indice.TabIndex = 12;
             this.lb_indice.Text = "TIPO DE INDICE:";
             this.lb_indice.Visible = false;
             // 
             // tb_Nombre
             // 
-            this.tb_Nombre.Location = new System.Drawing.Point(15, 418);
+            this.tb_Nombre.Location = new System.Drawing.Point(20, 514);
+            this.tb_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Nombre.Name = "tb_Nombre";
-            this.tb_Nombre.Size = new System.Drawing.Size(132, 20);
+            this.tb_Nombre.Size = new System.Drawing.Size(175, 22);
             this.tb_Nombre.TabIndex = 13;
             this.tb_Nombre.Visible = false;
             // 
@@ -298,18 +246,20 @@
             "E",
             "C",
             "F"});
-            this.cb_TipoDato.Location = new System.Drawing.Point(161, 417);
+            this.cb_TipoDato.Location = new System.Drawing.Point(215, 513);
+            this.cb_TipoDato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_TipoDato.Name = "cb_TipoDato";
-            this.cb_TipoDato.Size = new System.Drawing.Size(115, 21);
+            this.cb_TipoDato.Size = new System.Drawing.Size(152, 24);
             this.cb_TipoDato.TabIndex = 14;
             this.cb_TipoDato.Visible = false;
             this.cb_TipoDato.SelectedIndexChanged += new System.EventHandler(this.cb_TipoDato_SelectedIndexChanged);
             // 
             // tb_Longitud
             // 
-            this.tb_Longitud.Location = new System.Drawing.Point(285, 418);
+            this.tb_Longitud.Location = new System.Drawing.Point(380, 514);
+            this.tb_Longitud.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Longitud.Name = "tb_Longitud";
-            this.tb_Longitud.Size = new System.Drawing.Size(86, 20);
+            this.tb_Longitud.Size = new System.Drawing.Size(113, 22);
             this.tb_Longitud.TabIndex = 15;
             this.tb_Longitud.Visible = false;
             // 
@@ -325,9 +275,10 @@
             "5",
             "6",
             "8"});
-            this.cb_Indice.Location = new System.Drawing.Point(380, 418);
+            this.cb_Indice.Location = new System.Drawing.Point(507, 514);
+            this.cb_Indice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_Indice.Name = "cb_Indice";
-            this.cb_Indice.Size = new System.Drawing.Size(123, 21);
+            this.cb_Indice.Size = new System.Drawing.Size(163, 24);
             this.cb_Indice.TabIndex = 16;
             this.cb_Indice.Visible = false;
             this.cb_Indice.SelectedIndexChanged += new System.EventHandler(this.cb_Indice_SelectedIndexChanged);
@@ -338,10 +289,10 @@
             this.btn_Regreso.FlatAppearance.BorderSize = 0;
             this.btn_Regreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Regreso.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_Regreso.Location = new System.Drawing.Point(740, 418);
+            this.btn_Regreso.Location = new System.Drawing.Point(987, 514);
             this.btn_Regreso.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Regreso.Name = "btn_Regreso";
-            this.btn_Regreso.Size = new System.Drawing.Size(114, 23);
+            this.btn_Regreso.Size = new System.Drawing.Size(152, 28);
             this.btn_Regreso.TabIndex = 17;
             this.btn_Regreso.Text = "Tabla de entidades";
             this.btn_Regreso.UseVisualStyleBackColor = false;
@@ -353,10 +304,10 @@
             this.btn_Aceptar.FlatAppearance.BorderSize = 0;
             this.btn_Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Aceptar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_Aceptar.Location = new System.Drawing.Point(507, 418);
+            this.btn_Aceptar.Location = new System.Drawing.Point(676, 514);
             this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(114, 23);
+            this.btn_Aceptar.Size = new System.Drawing.Size(152, 28);
             this.btn_Aceptar.TabIndex = 18;
             this.btn_Aceptar.Text = "Agregar Atributo";
             this.btn_Aceptar.UseVisualStyleBackColor = false;
@@ -366,9 +317,10 @@
             // cb_Entidades
             // 
             this.cb_Entidades.FormattingEnabled = true;
-            this.cb_Entidades.Location = new System.Drawing.Point(620, 376);
+            this.cb_Entidades.Location = new System.Drawing.Point(827, 463);
+            this.cb_Entidades.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_Entidades.Name = "cb_Entidades";
-            this.cb_Entidades.Size = new System.Drawing.Size(121, 21);
+            this.cb_Entidades.Size = new System.Drawing.Size(160, 24);
             this.cb_Entidades.TabIndex = 19;
             this.cb_Entidades.SelectedIndexChanged += new System.EventHandler(this.cb_Entidades_SelectedIndexChanged);
             // 
@@ -378,10 +330,10 @@
             this.btn_aceptarEntidad.FlatAppearance.BorderSize = 0;
             this.btn_aceptarEntidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_aceptarEntidad.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_aceptarEntidad.Location = new System.Drawing.Point(745, 376);
+            this.btn_aceptarEntidad.Location = new System.Drawing.Point(993, 463);
             this.btn_aceptarEntidad.Margin = new System.Windows.Forms.Padding(1);
             this.btn_aceptarEntidad.Name = "btn_aceptarEntidad";
-            this.btn_aceptarEntidad.Size = new System.Drawing.Size(114, 23);
+            this.btn_aceptarEntidad.Size = new System.Drawing.Size(152, 28);
             this.btn_aceptarEntidad.TabIndex = 20;
             this.btn_aceptarEntidad.Text = "Cambiar";
             this.btn_aceptarEntidad.UseVisualStyleBackColor = false;
@@ -392,9 +344,10 @@
             this.lb_Foranea.AutoSize = true;
             this.lb_Foranea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Foranea.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_Foranea.Location = new System.Drawing.Point(215, 381);
+            this.lb_Foranea.Location = new System.Drawing.Point(287, 469);
+            this.lb_Foranea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Foranea.Name = "lb_Foranea";
-            this.lb_Foranea.Size = new System.Drawing.Size(109, 16);
+            this.lb_Foranea.Size = new System.Drawing.Size(134, 20);
             this.lb_Foranea.TabIndex = 21;
             this.lb_Foranea.Text = "FORANEA DE:";
             this.lb_Foranea.Visible = false;
@@ -402,19 +355,89 @@
             // cb_Foranea
             // 
             this.cb_Foranea.FormattingEnabled = true;
-            this.cb_Foranea.Location = new System.Drawing.Point(209, 417);
+            this.cb_Foranea.Location = new System.Drawing.Point(279, 513);
+            this.cb_Foranea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_Foranea.Name = "cb_Foranea";
-            this.cb_Foranea.Size = new System.Drawing.Size(115, 21);
+            this.cb_Foranea.Size = new System.Drawing.Size(152, 24);
             this.cb_Foranea.TabIndex = 22;
             this.cb_Foranea.Visible = false;
             this.cb_Foranea.SelectedIndexChanged += new System.EventHandler(this.cb_Foranea_SelectedIndexChanged);
             // 
+            // Nombre
+            // 
+            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Nombre.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // tipo_Dato
+            // 
+            this.tipo_Dato.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.tipo_Dato.DefaultCellStyle = dataGridViewCellStyle2;
+            this.tipo_Dato.HeaderText = "Tipo Dato";
+            this.tipo_Dato.MinimumWidth = 6;
+            this.tipo_Dato.Name = "tipo_Dato";
+            this.tipo_Dato.ReadOnly = true;
+            // 
+            // long_Atributo
+            // 
+            this.long_Atributo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.long_Atributo.DefaultCellStyle = dataGridViewCellStyle3;
+            this.long_Atributo.HeaderText = "Longitud";
+            this.long_Atributo.MinimumWidth = 6;
+            this.long_Atributo.Name = "long_Atributo";
+            this.long_Atributo.ReadOnly = true;
+            // 
+            // Dir_Atributo
+            // 
+            this.Dir_Atributo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Dir_Atributo.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Dir_Atributo.HeaderText = "";
+            this.Dir_Atributo.MinimumWidth = 6;
+            this.Dir_Atributo.Name = "Dir_Atributo";
+            this.Dir_Atributo.ReadOnly = true;
+            this.Dir_Atributo.Visible = false;
+            // 
+            // tipo_Indice
+            // 
+            this.tipo_Indice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.tipo_Indice.DefaultCellStyle = dataGridViewCellStyle5;
+            this.tipo_Indice.HeaderText = "Tipo de Indice";
+            this.tipo_Indice.MinimumWidth = 6;
+            this.tipo_Indice.Name = "tipo_Indice";
+            this.tipo_Indice.ReadOnly = true;
+            // 
+            // Dir_Indice
+            // 
+            this.Dir_Indice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Dir_Indice.HeaderText = "Dir. Indice";
+            this.Dir_Indice.MinimumWidth = 6;
+            this.Dir_Indice.Name = "Dir_Indice";
+            this.Dir_Indice.ReadOnly = true;
+            // 
+            // Dir_sigAtributo
+            // 
+            this.Dir_sigAtributo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Dir_sigAtributo.HeaderText = "";
+            this.Dir_sigAtributo.MinimumWidth = 6;
+            this.Dir_sigAtributo.Name = "Dir_sigAtributo";
+            this.Dir_sigAtributo.ReadOnly = true;
+            this.Dir_sigAtributo.Visible = false;
+            // 
             // FormAtributo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(866, 450);
+            this.ClientSize = new System.Drawing.Size(1155, 554);
             this.Controls.Add(this.cb_Foranea);
             this.Controls.Add(this.lb_Foranea);
             this.Controls.Add(this.btn_aceptarEntidad);
@@ -432,6 +455,7 @@
             this.Controls.Add(this.dgv_Atributo);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAtributo";
             this.Text = "Tabla de atributos";
             this.Load += new System.EventHandler(this.FormAtributo_Load);
@@ -467,6 +491,8 @@
         private System.Windows.Forms.ToolStripMenuItem modificarTipoDeDatoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarLongitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarTipoDeIndiceToolStripMenuItem;
+        private System.Windows.Forms.Label lb_Foranea;
+        private System.Windows.Forms.ComboBox cb_Foranea;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo_Dato;
         private System.Windows.Forms.DataGridViewTextBoxColumn long_Atributo;
@@ -474,7 +500,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo_Indice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dir_Indice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dir_sigAtributo;
-        private System.Windows.Forms.Label lb_Foranea;
-        private System.Windows.Forms.ComboBox cb_Foranea;
     }
 }

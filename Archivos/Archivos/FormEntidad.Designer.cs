@@ -64,6 +64,9 @@
             this.lbTablas = new System.Windows.Forms.Label();
             this.groupBoxEntidades = new System.Windows.Forms.GroupBox();
             this.lbBasedeDatos = new System.Windows.Forms.Label();
+            this.opcionesBD = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarBDNombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Entidad)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBoxEntidades.SuspendLayout();
@@ -84,7 +87,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Entidad.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Entidad.Location = new System.Drawing.Point(315, 93);
+            this.dgv_Entidad.Location = new System.Drawing.Point(376, 93);
             this.dgv_Entidad.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Entidad.Name = "dgv_Entidad";
             this.dgv_Entidad.ReadOnly = true;
@@ -112,6 +115,7 @@
             this.nuevoArchivoToolStripMenuItem,
             this.abrirArchivoToolStripMenuItem,
             this.cerrarArchivoToolStripMenuItem,
+            this.opcionesBD,
             this.nuevoRegistroToolStripMenuItem,
             this.indiceToolStripMenuItem,
             this.árbolBToolStripMenuItem,
@@ -119,7 +123,7 @@
             this.ejecutarSQLToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(856, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(913, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -127,7 +131,7 @@
             // 
             this.nuevoArchivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nuevoArchivoToolStripMenuItem.Name = "nuevoArchivoToolStripMenuItem";
-            this.nuevoArchivoToolStripMenuItem.Size = new System.Drawing.Size(89, 26);
+            this.nuevoArchivoToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.nuevoArchivoToolStripMenuItem.Text = "Nueva BD";
             this.nuevoArchivoToolStripMenuItem.Click += new System.EventHandler(this.nuevoArchivoToolStripMenuItem_Click);
             // 
@@ -135,7 +139,7 @@
             // 
             this.abrirArchivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.abrirArchivoToolStripMenuItem.Name = "abrirArchivoToolStripMenuItem";
-            this.abrirArchivoToolStripMenuItem.Size = new System.Drawing.Size(80, 26);
+            this.abrirArchivoToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.abrirArchivoToolStripMenuItem.Text = "Abrir BD";
             this.abrirArchivoToolStripMenuItem.Click += new System.EventHandler(this.abrirArchivoToolStripMenuItem_Click);
             // 
@@ -143,7 +147,7 @@
             // 
             this.cerrarArchivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cerrarArchivoToolStripMenuItem.Name = "cerrarArchivoToolStripMenuItem";
-            this.cerrarArchivoToolStripMenuItem.Size = new System.Drawing.Size(87, 26);
+            this.cerrarArchivoToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.cerrarArchivoToolStripMenuItem.Text = "Cerrar BD";
             this.cerrarArchivoToolStripMenuItem.Click += new System.EventHandler(this.cerrarArchivoToolStripMenuItem_Click);
             // 
@@ -155,7 +159,7 @@
             this.hashEstaticoToolStripMenuItem});
             this.nuevoRegistroToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.nuevoRegistroToolStripMenuItem.Name = "nuevoRegistroToolStripMenuItem";
-            this.nuevoRegistroToolStripMenuItem.Size = new System.Drawing.Size(62, 26);
+            this.nuevoRegistroToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.nuevoRegistroToolStripMenuItem.Text = "Datos";
             // 
             // secuencialToolStripMenuItem
@@ -300,7 +304,7 @@
             // 
             this.ejecutarSQLToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ejecutarSQLToolStripMenuItem.Name = "ejecutarSQLToolStripMenuItem";
-            this.ejecutarSQLToolStripMenuItem.Size = new System.Drawing.Size(106, 26);
+            this.ejecutarSQLToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.ejecutarSQLToolStripMenuItem.Text = "Ejecutar SQL";
             this.ejecutarSQLToolStripMenuItem.Click += new System.EventHandler(this.ejecutarSQLToolStripMenuItem_Click);
             // 
@@ -309,7 +313,7 @@
             this.lbl_Cabecera.AutoSize = true;
             this.lbl_Cabecera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Cabecera.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Cabecera.Location = new System.Drawing.Point(724, 53);
+            this.lbl_Cabecera.Location = new System.Drawing.Point(761, 53);
             this.lbl_Cabecera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Cabecera.Name = "lbl_Cabecera";
             this.lbl_Cabecera.Size = new System.Drawing.Size(119, 25);
@@ -323,7 +327,7 @@
             this.btn_CrearEntidad.FlatAppearance.BorderSize = 0;
             this.btn_CrearEntidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CrearEntidad.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_CrearEntidad.Location = new System.Drawing.Point(76, 94);
+            this.btn_CrearEntidad.Location = new System.Drawing.Point(9, 94);
             this.btn_CrearEntidad.Margin = new System.Windows.Forms.Padding(1);
             this.btn_CrearEntidad.Name = "btn_CrearEntidad";
             this.btn_CrearEntidad.Size = new System.Drawing.Size(123, 28);
@@ -338,7 +342,7 @@
             this.btn_Modificar.FlatAppearance.BorderSize = 0;
             this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Modificar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_Modificar.Location = new System.Drawing.Point(76, 187);
+            this.btn_Modificar.Location = new System.Drawing.Point(9, 191);
             this.btn_Modificar.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Modificar.Name = "btn_Modificar";
             this.btn_Modificar.Size = new System.Drawing.Size(123, 28);
@@ -353,7 +357,7 @@
             this.btn_Borrar.FlatAppearance.BorderSize = 0;
             this.btn_Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_Borrar.Location = new System.Drawing.Point(76, 265);
+            this.btn_Borrar.Location = new System.Drawing.Point(9, 267);
             this.btn_Borrar.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Borrar.Name = "btn_Borrar";
             this.btn_Borrar.Size = new System.Drawing.Size(123, 28);
@@ -367,7 +371,7 @@
             this.tb_entidad.BackColor = System.Drawing.Color.Gray;
             this.tb_entidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_entidad.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.tb_entidad.Location = new System.Drawing.Point(16, 42);
+            this.tb_entidad.Location = new System.Drawing.Point(9, 42);
             this.tb_entidad.Margin = new System.Windows.Forms.Padding(4);
             this.tb_entidad.Name = "tb_entidad";
             this.tb_entidad.Size = new System.Drawing.Size(245, 29);
@@ -380,7 +384,7 @@
             this.btn_Atributo.FlatAppearance.BorderSize = 0;
             this.btn_Atributo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Atributo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_Atributo.Location = new System.Drawing.Point(85, 467);
+            this.btn_Atributo.Location = new System.Drawing.Point(77, 467);
             this.btn_Atributo.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Atributo.Name = "btn_Atributo";
             this.btn_Atributo.Size = new System.Drawing.Size(169, 28);
@@ -394,7 +398,7 @@
             this.lb_atributo.AutoSize = true;
             this.lb_atributo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_atributo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_atributo.Location = new System.Drawing.Point(61, 426);
+            this.lb_atributo.Location = new System.Drawing.Point(13, 426);
             this.lb_atributo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_atributo.Name = "lb_atributo";
             this.lb_atributo.Size = new System.Drawing.Size(23, 20);
@@ -406,18 +410,19 @@
             this.tb_modificar.BackColor = System.Drawing.Color.Gray;
             this.tb_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_modificar.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.tb_modificar.Location = new System.Drawing.Point(16, 143);
+            this.tb_modificar.Location = new System.Drawing.Point(9, 143);
             this.tb_modificar.Margin = new System.Windows.Forms.Padding(4);
             this.tb_modificar.Name = "tb_modificar";
             this.tb_modificar.Size = new System.Drawing.Size(245, 29);
             this.tb_modificar.TabIndex = 9;
+            this.tb_modificar.TextChanged += new System.EventHandler(this.tb_modificar_TextChanged);
             // 
             // lbTablas
             // 
             this.lbTablas.AutoSize = true;
             this.lbTablas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTablas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTablas.Location = new System.Drawing.Point(514, 53);
+            this.lbTablas.Location = new System.Drawing.Point(581, 53);
             this.lbTablas.Name = "lbTablas";
             this.lbTablas.Size = new System.Drawing.Size(97, 25);
             this.lbTablas.TabIndex = 10;
@@ -432,9 +437,9 @@
             this.groupBoxEntidades.Controls.Add(this.btn_Modificar);
             this.groupBoxEntidades.Controls.Add(this.btn_Borrar);
             this.groupBoxEntidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxEntidades.Location = new System.Drawing.Point(27, 93);
+            this.groupBoxEntidades.Location = new System.Drawing.Point(17, 93);
             this.groupBoxEntidades.Name = "groupBoxEntidades";
-            this.groupBoxEntidades.Size = new System.Drawing.Size(268, 312);
+            this.groupBoxEntidades.Size = new System.Drawing.Size(264, 312);
             this.groupBoxEntidades.TabIndex = 11;
             this.groupBoxEntidades.TabStop = false;
             this.groupBoxEntidades.Text = "TABLA";
@@ -452,13 +457,36 @@
             this.lbBasedeDatos.Text = "label1";
             this.lbBasedeDatos.Visible = false;
             // 
+            // opcionesBD
+            // 
+            this.opcionesBD.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarBDNombreToolStripMenuItem,
+            this.eliminarBDToolStripMenuItem});
+            this.opcionesBD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.opcionesBD.Name = "opcionesBD";
+            this.opcionesBD.Size = new System.Drawing.Size(109, 24);
+            this.opcionesBD.Text = "Opciones BD";
+            // 
+            // modificarBDNombreToolStripMenuItem
+            // 
+            this.modificarBDNombreToolStripMenuItem.Name = "modificarBDNombreToolStripMenuItem";
+            this.modificarBDNombreToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+            this.modificarBDNombreToolStripMenuItem.Text = "Modificar BD (Nombre)";
+            this.modificarBDNombreToolStripMenuItem.Click += new System.EventHandler(this.modificarBDNombreToolStripMenuItem_Click);
+            // 
+            // eliminarBDToolStripMenuItem
+            // 
+            this.eliminarBDToolStripMenuItem.Name = "eliminarBDToolStripMenuItem";
+            this.eliminarBDToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+            this.eliminarBDToolStripMenuItem.Text = "Eliminar BD ";
+            // 
             // FormEntidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(856, 523);
+            this.ClientSize = new System.Drawing.Size(913, 523);
             this.Controls.Add(this.lbBasedeDatos);
             this.Controls.Add(this.groupBoxEntidades);
             this.Controls.Add(this.lbTablas);
@@ -520,6 +548,9 @@
         private System.Windows.Forms.Label lbTablas;
         private System.Windows.Forms.GroupBox groupBoxEntidades;
         private System.Windows.Forms.Label lbBasedeDatos;
+        private System.Windows.Forms.ToolStripMenuItem opcionesBD;
+        private System.Windows.Forms.ToolStripMenuItem modificarBDNombreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarBDToolStripMenuItem;
     }
 }
 

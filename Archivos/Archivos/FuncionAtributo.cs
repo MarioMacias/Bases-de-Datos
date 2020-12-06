@@ -21,33 +21,37 @@ namespace Archivos
         public long dirIndiceForanea = -1;
         string nombreArchivo;
 
+       
+        // private FolderBrowserDialog carpeta;
+        private string NombreBasedatos;
+
         /*Asigna una nueva direccion random a la identidad*/
-     /*   public void nuevaDireccionAtributo(List<Atributo> atributos)
-        {
-            this.atributos = atributos;
-            foreach (Atributo at in atributos)
-            {
-                //if (at.id_Atributo != null)
-                //{
-                    //byte[] auxByte = conseguirID();
-                    foreach (Atributo at2 in atributos)
-                    {
-                        //if (at2.id_Atributo == auxByte)
-                        //{
-                            nuevaDireccionAtributo(atributos);
-                        //}
-                        //else
-                        //{
-                            //continue;
-                        //}
-                    }
-                //}
-                //else
-                //{
-                //    at.id_Atributo = conseguirID();
-                //}
-            }
-        }*/
+        /*   public void nuevaDireccionAtributo(List<Atributo> atributos)
+           {
+               this.atributos = atributos;
+               foreach (Atributo at in atributos)
+               {
+                   //if (at.id_Atributo != null)
+                   //{
+                       //byte[] auxByte = conseguirID();
+                       foreach (Atributo at2 in atributos)
+                       {
+                           //if (at2.id_Atributo == auxByte)
+                           //{
+                               nuevaDireccionAtributo(atributos);
+                           //}
+                           //else
+                           //{
+                               //continue;
+                           //}
+                       }
+                   //}
+                   //else
+                   //{
+                   //    at.id_Atributo = conseguirID();
+                   //}
+               }
+           }*/
 
         /*Metodo para añadir un nuevo atributo al archivo*/
         public bool agregaAtributoArchivo(string nombreArchivo, int pos, List<Entidad> entidades)
@@ -55,7 +59,7 @@ namespace Archivos
             this.pos = pos;
             this.nombreArchivo = nombreArchivo;
             this.entidades = entidades;
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+            Fichero = new FileStream(nombreArchivo+@"\tablas.bin", FileMode.Open, FileAccess.Write);
 
             if (dirIndiceForanea != -1)
             {
@@ -104,7 +108,7 @@ namespace Archivos
         {
             entidades.ElementAt(pos).direccion_Atributo = entidades.ElementAt(pos).atributos.First().direccion_Atributo;
 
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+            Fichero = new FileStream(nombreArchivo+@"\tablas.bin", FileMode.Open, FileAccess.Write);
 
             Fichero.Seek(entidades.ElementAt(pos).direccion_Entidad, SeekOrigin.Begin);
             binaryWriter = new BinaryWriter(Fichero);
@@ -123,7 +127,7 @@ namespace Archivos
         /*Metodo para escribir los datos del archivo*/
         private void ordenarAtributos(Atributo atrib)
         {
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+            Fichero = new FileStream(nombreArchivo+ @"\tablas.bin", FileMode.Open, FileAccess.Write);
             Fichero.Seek(atrib.direccion_Atributo, SeekOrigin.Begin);
 
             binaryWriter = new BinaryWriter(Fichero);
@@ -199,7 +203,7 @@ namespace Archivos
         {
             entidades.ElementAt(pos).direccion_Atributo = -1;
 
-            Fichero = new FileStream(nombreArchivo, FileMode.Open, FileAccess.Write);
+            Fichero = new FileStream(nombreArchivo+ @"\tablas.bin", FileMode.Open, FileAccess.Write);
             Fichero.Seek(entidades.ElementAt(pos).direccion_Entidad, SeekOrigin.Begin);
             binaryWriter = new BinaryWriter(Fichero);
 

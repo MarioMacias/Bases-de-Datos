@@ -107,7 +107,7 @@ namespace Archivos
                 int posicion = dgv_Entidad.CurrentRow.Index; //saber la pos de la fila que se selecciono
 
                 this.Hide();
-                FormAtributo fAtributo = new FormAtributo(this, entidades, fa.nombreArchivo, posicion);
+                FormAtributo fAtributo = new FormAtributo(this, entidades, fa.rutaCarpeta, posicion); //06/12/2020 rutaCarpeta
                 fAtributo.cambia += new FormAtributo.pasar(regresa);
                 fAtributo.Show();
             }
@@ -216,6 +216,7 @@ namespace Archivos
                 tb_modificar.Text = "";
                 lbl_Cabecera.Text = "";
                 lb_atributo.Text = "";
+                lbBasedeDatos.Visible = false;
                 MessageBox.Show("cerrado homs");
             }
         }
@@ -559,6 +560,28 @@ namespace Archivos
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void tb_modificar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modificarBDNombreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CambiaNombre nuevo = new CambiaNombre();
+            nuevo.ShowDialog();
+
+            string modifica = nuevo.regresaNuevoNombre();
+            string rutaAnt = fa.rutaCarpeta;
+
+            while (!rutaAnt.EndsWith("\\"))
+            {
+                rutaAnt = rutaAnt.Remove(rutaAnt.Length - 1, 1);
+            }
+            Directory.Move(fa.rutaCarpeta, rutaAnt + @"\" + modifica);
+            fa.rutaCarpeta = rutaAnt + @"\" + modifica;
+            lbBasedeDatos.Text = fa.regresaNombreBD();
         }
     }
 }

@@ -27,8 +27,8 @@ namespace Archivos
 
         List<Entidad> entidades;
 
-        private string rutaCarpeta;
-        private FolderBrowserDialog carpeta;
+        public string rutaCarpeta;
+       // private FolderBrowserDialog carpeta;
         private string NombreBasedatos;
 
         /*Forma de crear un nuevo arhcivo*/

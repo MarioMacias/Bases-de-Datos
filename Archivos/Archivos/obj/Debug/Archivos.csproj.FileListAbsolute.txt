@@ -76,3 +76,4 @@ C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\De
 C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
 C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.exe
 C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Luis Pablo Rocha\Desktop\GITHUB\Bases-de-Datos\Archivos\Archivos\obj\Debug\Archivos.CambiaNombre.resources
